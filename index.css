@@ -1,0 +1,29 @@
+/* various ways of writing css
+
+normal CSS like below 
+inline CSS
+SCSS
+Component Libraries -Material UI, BaseUI, ant UI,  chakra
+Styled components library
+
+TailWind CSS Framework  (ADVs/ Features)
+- CSS on the go (in the same file)
+- resuabilty
+-less bundle size
+-Flexible UI (Customisation possible)
+- evertything in tailwind works with Classnames 
+
+Along with Tailwind , we have to use POSTCSS which  tells parcel bundle  in converting these
+classes of tailwind to browser understandable/readable, because browser cannot understand 
+the classes of tailwind directly...
+
+// *** USE TAILWIND EXTENSION IMP ***
+IMP point :- Tailwindcss  only transfer those classes that have used projects to production , it makes the bundle size less
+ we can also see in index.css network tab  on inspect. parcel with the help of postcss , it converts  tailwoind classes to normal browser css
+*/  
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+

@@ -7,7 +7,7 @@ import { IMG_CDN } from "../constants";
         <h4 className="font-bold text-lg p-1"> {name}</h4>
         <h4 className="font-medium text-base p-1" >{cuisines.join(', ')}</h4>
         <h4 className="p-1">Average Rating : {avgRatingString}</h4>
-        {/* <h4 className="p-1">Owner: {user.name}</h4> */}
+      
 
       </div>
     );

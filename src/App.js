@@ -26,7 +26,7 @@ import Cart from "./components/Cart";
 //---------------------------------------------------
 /**
  * 
- *  Chunking
+ * Chunking
  * Dynamic import
  * Code Splilting
  * Dynamic Bundling

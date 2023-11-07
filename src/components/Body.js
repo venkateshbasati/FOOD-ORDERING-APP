@@ -27,6 +27,7 @@ const Body = ({dynamicUser}) => {
   const [filteredRestaurants,setFilteredRestaurants]=useState([])
    
   const [searchText, setSearchText] = useState("");
+  // const temp="ex";
   const {user, setState }=useContext(UserContext)
   
    useEffect(()=>{
@@ -68,9 +69,9 @@ const Body = ({dynamicUser}) => {
     if(!allRestaurants) 
       return null;
 
-  // if(filteredRestaurants?.length===0){
-  //   return <h2>No restaurant matches your search</h2>
-  // }
+  if(filteredRestaurants?.length===0){
+    return <h1 className=" p-3 text-orange-500 font-semibold text-2xl text-center">No restaurant found ☹</h1>
+  }
 
  
 

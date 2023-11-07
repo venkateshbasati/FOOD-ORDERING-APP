@@ -49,7 +49,9 @@ const CartFoodItems = ({ name, imageId, description, price }) => {
       </div>
       {/* <h4>Owner: {user.name}</h4> */}
     </div>
+   
   );
+
 };
 
 export default CartFoodItems;

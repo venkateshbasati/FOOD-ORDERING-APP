@@ -57,7 +57,7 @@ import Cart from "./components/Cart";
 
 const AppLayout = () => {
   const [dynamicUser, setDynamicUser]=useState({
-    name : "Venkatesh Foods",
+    name : "VB Foods",
     email:"vb743@gmail.com" 
   })
  

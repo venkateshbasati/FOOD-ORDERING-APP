@@ -82,8 +82,8 @@ const Body = ({dynamicUser}) => {
     // if restaruant has  data ==> actual data UI
 
     <>
-      <div className="search-container  inline-block  rounded-md  bg-orange-200 shadow-lg my-2 py-1 px-2">    
-        <input  className="rounded-md text-center"
+      <div className="search-container  mx-auto text-center grid grid-cols-10 rounded-md w-1/2 bg-orange-200 shadow-lg my-3 py-1 px-1">    
+        <input  className="rounded-md px-8 text-center col-span-8 "
           type="text"
           placeholder="Search Restaurant"
           value={searchText}
@@ -93,7 +93,7 @@ const Body = ({dynamicUser}) => {
           }}
         />
         
-        <button className="search-btn m-1 px-2 rounded-md  shadow-md bg-slate-700 text-white"  onClick={ ()=>{
+        <button className="search-btn ml-1 px-3 py-1 rounded-md  shadow-md bg-slate-700 text-white  col-span-2"  onClick={ ()=>{
           //need to filter restaurants
           const filteredrest=filterRestaurants(searchText, allRestaurants)
           

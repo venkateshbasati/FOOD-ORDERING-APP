@@ -36,7 +36,7 @@ const isOnline=useOnline()
 const cartItems=useSelector(store=>store.cart.items)
 
   return (
-    <div className="flex justify-between  mb-2 bg-slate-200 shadow-xl ">
+    <div className="flex justify-between  items-center mb-2 bg-slate-200 shadow-xl ">
       <Logo />
       <span className="mx-1 py-10">{isOnline ? '🟢' : '🔴'}</span>
       <h5 className="font-mono text-3xl text-amber-600 p-10 ">{user.name}</h5>
@@ -77,12 +77,13 @@ const cartItems=useSelector(store=>store.cart.items)
 
         
       </div>
-      
+      <div>
       {isLoggedIn ? (
         <button  className ="border font-medium  rounded-md  text-white bg-slate-700 p-1 h-11 m-2"onClick={() => setIsLoggedIn(false)}>Logout</button>
       ) : (
         <button className ="border font-medium  rounded-md text-white  bg-slate-700 p-1 h-11 m-2" onClick={() => setIsLoggedIn(true)}>Login</button>
       )}
+      </div>
      
     </div>
     
